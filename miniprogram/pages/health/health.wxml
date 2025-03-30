@@ -1,0 +1,82 @@
+<view class="page">
+  <!-- 顶部导航栏 -->
+  <!-- 用户信息部分 -->
+  <view class="user-info">
+    <view class="avatar">
+      <image class="avatar-image" src="/images/call.jpg"></image>
+    </view>
+    <view class="info">
+      <view class="user-details">
+        <text class="user-name">徐海福</text>
+        <text class="user-info-text">男 56岁</text>
+      </view>
+      <view class="user-actions">
+        <button class="action-button">健康档案</button>
+        <button class="action-button">用药提醒</button>
+      </view>
+    </view>
+  </view>
+  <!-- 数据部分 -->
+  <view class="data-grid">
+    <view class="data-item">
+      <text class="data-title">体重 KG：</text>
+      <text class="data-value">75</text>
+      <text class="data-subtitle">标准范围: 60kg~78kg</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">身高 CM：</text>
+      <text class="data-value">175</text>
+      <text class="data-subtitle">男性身均: 167.2cm</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">身体指数 BMI:</text>
+      <text class="data-value">--</text>
+      <text class="data-subtitle">正常范围: 18.5~23.9</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">体温 ℃：</text>
+      <text class="data-value">--</text>
+      <text class="data-subtitle">正常范围: 36.3~37.2</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">血压/脉率</text>
+      <text class="data-value">收缩压: 120mmHg</text>
+      <text class="data-subtitle">舒张压: 150mmHg</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">心率</text>
+      <text class="data-value">今日同步</text>
+      <text class="data-subtitle">82次/分</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">血糖</text>
+      <text class="data-value">记录血糖</text>
+      <text class="data-subtitle">120mmol/L</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">血氧</text>
+      <text class="data-value">血氧值</text>
+      <text class="data-subtitle">8%</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">体脂率</text>
+      <text class="data-value">最新体脂</text>
+      <text class="data-subtitle">--%</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">体脂</text>
+      <text class="data-value">最新体脂</text>
+      <text class="data-subtitle">--mmol/L</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">睡眠</text>
+      <text class="data-value">睡眠深度时长</text>
+      <text class="data-subtitle">--h</text>
+    </view>
+    <view class="data-item">
+      <text class="data-title">尿酸</text>
+      <text class="data-value">尿酸值</text>
+      <text class="data-subtitle">--μmol/L</text>
+    </view>
+  </view>
+</view>

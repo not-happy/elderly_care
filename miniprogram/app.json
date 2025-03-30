@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/my/my",
+    "pages/health/health",
+    "pages/device/device",
+    "pages/help/help",
+    "pages/call/call",
+    "pages/article/article",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/heart.jpg",
+        "selectedIconPath": "images/heart.jpg"
+      },
+      {
+        "pagePath": "pages/health/health",
+        "text": "健康",
+        "iconPath": "images/help.jpg",
+        "selectedIconPath": "images/help.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/help.jpg",
+        "selectedIconPath": "images/help.jpg"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTitleText": "智慧居家养老服务平台",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffa500"
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "tagNameStyleIsolation": "legacy",
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

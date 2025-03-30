@@ -1,0 +1,50 @@
+<view class="page">
+  <!-- 顶部导航栏 -->
+  <view class="navbar">
+    <view class="navbar-left">
+      <text class="navbar-title">设备中心</text>
+    </view>
+    <view class="navbar-right">
+      <view class="add-button">+</view>
+    </view>
+  </view>
+  <!-- 设备列表 -->
+  <view class="device-list">
+    <view class="device-item">
+      <view class="device-icon">
+        <image src="/images/swith.jpg" class="icon"></image>
+      </view>
+      <view class="device-info">
+        <text class="device-name">智能手表A001</text>
+        <text class="device-status">已连接</text>
+      </view>
+      <view class="device-arrow">
+        <image src="/images/right.jpg" class="arrow-icon"></image>
+      </view>
+    </view>
+    <view class="device-item">
+      <view class="device-icon">
+        <image src="/images/body.jpg" class="icon"></image>
+      </view>
+      <view class="device-info">
+        <text class="device-name">智能体脂秤S102</text>
+        <text class="device-status">已连接</text>
+      </view>
+      <view class="device-arrow">
+        <image src="/images/right.jpg" class="arrow-icon"></image>
+      </view>
+    </view>
+    <view class="device-item">
+      <view class="device-icon">
+        <image src="/images/blood.jpg" class="icon"></image>
+      </view>
+      <view class="device-info">
+        <text class="device-name">血压仪D04</text>
+        <text class="device-status">已连接</text>
+      </view>
+      <view class="device-arrow">
+        <image src="/images/right.jpg" class="arrow-icon"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+<view class="container">
+  <!-- 内容部分 -->
+  <view class="content">
+    <!-- 服务卡片列表 -->
+    <view class="service-card">
+      <view class="card-top">
+        <view class="userinfo">
+          <image class="avatar" src="/images/avatar.jpg"></image>
+          <view class="info">
+            <text class="name">赵师傅</text>
+            <text class="description">主要负责家电维修</text>
+          </view>
+        </view>
+        <view class="call-image">
+          <image class="call-icon" src="/images/call.jpg"></image>
+        </view>
+      </view>
+      <view class="divider"></view>
+      <view class="card-bottom">
+        <view class="address">
+          <text class="name">星云小区理发店</text>
+          <text class="detail">北京市海淀区健德门小区11号楼</text>
+        </view>
+        <view class="distance">1.1Km</view>
+      </view>
+    </view>
+    <view class="service-card">
+      <view class="card-top">
+        <view class="userinfo">
+          <image class="avatar" src="/images/avatar.jpg"></image>
+          <view class="info">
+            <text class="name">赵师傅</text>
+            <text class="description">主要负责家电维修</text>
+          </view>
+        </view>
+        <view class="call-image">
+          <image class="call-icon" src="/images/call.jpg"></image>
+        </view>
+      </view>
+      <view class="divider"></view>
+      <view class="card-bottom">
+        <view class="address">
+          <text class="name">星云小区理发店</text>
+          <text class="detail">北京市海淀区健德门小区11号楼</text>
+        </view>
+        <view class="distance">1.1Km</view>
+      </view>
+    </view>
+    <view class="service-card">
+      <view class="card-top">
+        <view class="userinfo">
+          <image class="avatar" src="/images/avatar.jpg"></image>
+          <view class="info">
+            <text class="name">赵师傅</text>
+            <text class="description">主要负责家电维修</text>
+          </view>
+        </view>
+        <view class="call-image">
+          <image class="call-icon" src="/images/call.jpg"></image>
+        </view>
+      </view>
+      <view class="divider"></view>
+      <view class="card-bottom">
+        <view class="address">
+          <text class="name">星云小区理发店</text>
+          <text class="detail">北京市海淀区健德门小区11号楼</text>
+        </view>
+        <view class="distance">1.1Km</view>
+      </view>
+    </view>
+  </view>
+</view>

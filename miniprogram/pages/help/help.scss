@@ -1,0 +1,89 @@
+/* 页面背景 */
+.container {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 顶部导航栏 */
+/* 内容部分 */
+.content {
+  flex: 1;
+  padding: 10px 15px;
+  display: block; /* 确保子元素的外边距生效 */
+}
+
+/* 服务部分 */
+.service-section {
+  margin-bottom: 20px;
+  display: block; /* 确保子元素的外边距生效 */
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 80px;
+}
+
+/* 服务卡片 */
+.service-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+}
+
+.service-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 0px;
+}
+
+.service-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  display: block; /* 确保标题是块级元素 */
+  margin-bottom: 5px; /* 添加与描述的间距 */
+}
+
+.service-description {
+  font-size: 11px;
+  color: #b6b4b4;
+  margin-top: 5px;
+  display: block; /* 确保描述是块级元素 */
+}
+
+.service-price {
+  font-size: 16px;
+  color: #f9a825;
+  margin-top: 5px;
+}
+
+.service-action {
+  display: flex;
+  align-items: center;
+}
+
+.order-button {
+  background-color: #f9a825;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+  width: 80px !important; /* 强制设置宽度 */
+  cursor: pointer;
+}

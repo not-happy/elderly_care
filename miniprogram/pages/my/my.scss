@@ -1,0 +1,122 @@
+/* 页面背景 */
+.page {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* 用户信息部分 */
+  .user-info {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+
+    .avatar {
+      .avatar-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column; /* 子元素从上到下排列 */
+      justify-content: center; /* 垂直居中 */
+
+      .user-details {
+        display: flex;
+        flex-direction: column; /* 子元素从上到下排列 */
+
+        .user-name {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .user-info-text {
+          font-size: 12px;
+          color: #666666;
+        }
+      }
+
+      .user-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+        .action-button {
+          width: auto;
+          padding: 2px 5px;
+          background-color: #f9a825;
+          color: #ffffff;
+          border-radius: 0%;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /* 我的订单部分 */
+  .section {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .order-options {
+      display: flex;
+      justify-content: center;
+      gap: 60px; /* 设置子元素之间的间距 */
+
+      .order-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .order-icon {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 5px;
+        }
+
+        .order-text {
+          font-size: 14px;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+
+/* 服务设置部分 */
+.settings-options {
+  margin-top: 10px;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.settings-text {
+  flex: 1;
+  font-size: 14px;
+  color: #333333;
+}
+
+.settings-arrow {
+  width: 16px;
+  height: 16px;
+}

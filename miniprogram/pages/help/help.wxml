@@ -1,0 +1,51 @@
+<view class="page">
+  <!-- 顶部导航栏 -->
+  <!-- 内容部分 -->
+  <view class="content">
+    <!-- 助餐服务 -->
+    <view class="service-section">
+      <text class="section-title">助餐</text>
+      <view class="service-card">
+        <image class="service-image" src="/images/food.jpg"></image>
+        <view class="service-info">
+          <text class="service-title">上门为长者做饭</text>
+          <text class="service-description">为行动不便的长者提供助餐服务</text>
+          <text class="service-price">¥ 300.77</text>
+        </view>
+        <view class="service-action">
+          <button class="order-button">下单</button>
+        </view>
+      </view>
+    </view>
+    <!-- 助洁服务 -->
+    <view class="service-section">
+      <text class="section-title">助洁</text>
+      <view class="service-card">
+        <image class="service-image" src="/images/food.jpg"></image>
+        <view class="service-info">
+          <text class="service-title">上门为长者做日常保洁</text>
+          <text class="service-description">为行动不便的长者提供助洁服务</text>
+          <text class="service-price">¥ 300.77</text>
+        </view>
+        <view class="service-action">
+          <button class="order-button">下单</button>
+        </view>
+      </view>
+    </view>
+    <!-- 助浴服务 -->
+    <view class="service-section">
+      <text class="section-title">助浴</text>
+      <view class="service-card">
+        <image class="service-image" src="/images/food.jpg"></image>
+        <view class="service-info">
+          <text class="service-title">上门为长者助浴</text>
+          <text class="service-description">为行动不便的长者提供助浴服务</text>
+          <text class="service-price">¥ 300.77</text>
+        </view>
+        <view class="service-action">
+          <button class="order-button">下单</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

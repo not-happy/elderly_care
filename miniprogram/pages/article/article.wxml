@@ -1,0 +1,18 @@
+<view class="container">
+  <!-- 内容部分 -->
+  <view class="content">
+    <!-- 标题 -->
+    <view class="article-header">
+      <text class="article-title">老年人如何控制血糖？</text>
+      <text class="article-date">发布时间：2024年1月13日</text>
+    </view>
+    <!-- 图片 -->
+    <view class="article-image">
+      <image src="/images/image1.jpeg" mode="aspectFill"></image>
+    </view>
+    <!-- 文章内容 -->
+    <view class="article-body">
+      <text class="article-paragraph">控制血糖对于维持健康的生活方式和预防糖尿病等疾病至关重要。以下是一些控制血糖的方法：</text>
+    </view>
+  </view>
+</view>

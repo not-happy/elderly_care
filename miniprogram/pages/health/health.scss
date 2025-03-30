@@ -1,0 +1,97 @@
+/* 页面背景 */
+.page {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  /* 用户信息部分 */
+  .user-info {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+
+    .avatar {
+      .avatar-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column; /* 子元素从上到下排列 */
+      justify-content: center; /* 垂直居中 */
+
+      .user-details {
+        display: flex;
+        flex-direction: column; /* 子元素从上到下排列 */
+
+        .user-name {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .user-info-text {
+          font-size: 12px;
+          color: #666666;
+        }
+      }
+
+      .user-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+        .action-button {
+          width: auto;
+          padding: 2px 5px;
+          background-color: #f9a825;
+          color: #ffffff;
+          border-radius: 0%;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /* 数据部分 */
+  .data-grid {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    gap: 10px;
+    padding: 15px;
+
+    .data-item {
+      flex: 0 0 calc(50% - 5px); /* 每个元素占50%的宽度，减去间距 */
+      box-sizing: border-box; /* 包括内边距和边框 */
+
+      display: flex;
+      flex-direction: column; /* 文字从上到下排列 */
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      .data-title {
+        font-size: 14px;
+        color: #666666;
+      }
+
+      .data-value {
+        font-size: 12px;
+        font-weight: bold;
+        color: #999999;
+        margin-top: 5px; /* 添加与上方文字的间距 */
+      }
+
+      .data-subtitle {
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+$desc-font-size: 14px; // 描述文字大小
+$desc-color: #666; // 描述文字颜色
+
+/* 页面背景 */
+.container {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 10px; /* 移除内边距 */
+
+  /* 内容部分 */
+  .content {
+    flex: 1;
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 确保子元素从上往下排列 */
+
+    /* 服务卡片 */
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 10px; /* 卡片之间的间距 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+
+      .card-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .userinfo {
+          display: flex;
+          align-items: center; /* 让 .info 和 .avatar 垂直方向居中对齐 */
+
+          .avatar {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            object-fit: cover;
+          }
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 确保 .info 内部内容垂直居中 */
+
+            .description {
+              font-size: $desc-font-size;
+              color: $desc-color;
+              margin-top: 5px;
+            }
+          }
+        }
+
+        .call-image {
+          display: flex;
+          overflow: hidden;
+
+          .call-icon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    /* 添加横线样式 */
+    .divider {
+      height: 1px;
+      background-color: #ddd; /* 横线颜色 */
+      margin: 10px 0; /* 横线上下间距 */
+    }
+
+    .card-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 10px;
+
+      .address {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+
+        .detail {
+          margin-top: 5px;
+          font-size: $desc-font-size;
+          color: $desc-color;
+        }
+      }
+
+      .distance {
+        font-size: $desc-font-size;
+        color: $desc-color;
+      }
+    }
+  }
+}
