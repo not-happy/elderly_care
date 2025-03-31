@@ -5,7 +5,7 @@
       <text class="navbar-title">设备中心</text>
     </view>
     <view class="navbar-right">
-      <view class="add-button">+</view>
+      <view class="add-button" bindtap="navigateToAdd">+</view>
     </view>
   </view>
   <!-- 设备列表 -->

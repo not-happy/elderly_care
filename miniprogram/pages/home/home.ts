@@ -27,6 +27,7 @@ Component({
       console.log('首页加载完成');
       // 这里可以进行数据初始化或网络请求
     },
+    
 
     navigateToCall() {
       wx.navigateTo({
@@ -39,6 +40,11 @@ Component({
         url: '/pages/help/help', // 目标页面路径
       });
     },
+    navigateToHeart() {
+      wx.navigateTo({
+        url: '/pages/heart/heart', // 目标页面路径
+      });
+    },
 
     navigateToDevice() {
       wx.navigateTo({
@@ -49,6 +55,26 @@ Component({
     navigateToDiabetes() {
       wx.navigateTo({
         url: '/pages/article/article', // 目标页面路径
+      });
+    },
+
+    navigateToRemind() {
+      wx.navigateTo({
+        url: '/pages/health_remind/health_remind', // 目标页面路径
+      });
+    },
+    
+    // 在methods对象中添加:
+    navigateToMore() {
+      console.log('点击了更多');
+      wx.navigateTo({
+        url: '/pages/article_more/article_more', // 导航到文章列表页面
+        success: () => {
+          console.log('导航到更多文章页面成功');
+        },
+        fail: (err) => {
+          console.error('导航失败:', err);
+        }
       });
     },
   },

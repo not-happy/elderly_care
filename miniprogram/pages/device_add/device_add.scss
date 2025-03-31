@@ -1,0 +1,157 @@
+/* 页面容器 */
+.page {
+  --page-bg: #f5f5f5;
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --primary-color: hsl(22, 84%, 50%);
+  
+  background-color: var(--page-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // 使用 min-height 替代固定高度
+  
+  /* 设备列表容器 */
+  .device-list {
+    flex: 1;
+    padding: 15px;
+    position: relative; // 为绝对定位子元素提供定位上下文
+  }
+  
+  /* 单个设备卡片 */
+  .device-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #fff;
+    border-radius: 12px; // 增大圆角更符合现代设计
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease; // 添加交互动画
+    
+    &:active {
+      transform: scale(0.98); // 点击反馈
+    }
+    
+    /* 设备信息区域 */
+    .device-info {
+      flex: 1;
+      margin-right: 12px; // 增加与箭头的间距
+      
+      .device-name {
+        font-size: 17px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 8px 0; // 简化 margin 写法
+        line-height: 1.4;
+        
+        &::after { // 添加装饰性下划线
+          content: '';
+          display: block;
+          width: 40px;
+          height: 2px;
+          background: var(--primary-color);
+          margin-top: 6px;
+        }
+      }
+      
+      .device-status {
+        font-size: 13px;
+        color: #666;
+      }
+    }
+    
+    /* 右侧箭头图标 */
+    .device-arrow {
+      flex-shrink: 0;
+      
+      .arrow-icon {
+        width: 24px;
+        height: 24px;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); // 添加图标阴影
+      }
+    }
+  }
+  
+  /* 文字描述说明 */
+  .device-memo {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 0px; // 增加与列表的间距
+    line-height: 1.5;
+    padding: 60px 65px;
+    
+
+ }
+
+  /* 扫描按钮容器 */
+  .device-scan {
+    position: fixed;
+    bottom: 120px; // 调整到更舒适的位置
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 400px; // 添加最大宽度限制
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), darken(hsl(22, 84%, 50%), 5%));
+    color: white;
+    font: {
+      size: 17px;
+      weight: 600;
+    }
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+    cursor: pointer;
+    
+    /* 按钮图标 */
+    .scan-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      transition: transform 0.2s ease;
+    }
+    
+    /* 交互状态 */
+    &:hover, &:active {
+      opacity: 0.9;
+      box-shadow: 0 4px 15px rgba(255, 107, 0, 0.35);
+      
+      .scan-icon {
+        transform: rotate(-15deg); // 添加图标动画
+      }
+    }
+    
+    &:active {
+      transform: translateX(-50%) scale(0.96);
+    }
+    
+    /* 禁用状态 */
+    &--disabled {
+      background: #ccc;
+      pointer-events: none;
+    }
+  }
+}
+
+/* 响应式处理 */
+@media (max-width: 375px) {
+  .page {
+    .device-item {
+      padding: 12px;
+      
+      .device-name {
+        font-size: 16px;
+      }
+    }
+    
+    .device-scan {
+      bottom: 100px;
+      height: 48px;
+      font-size: 16px;
+    }
+  }
+}

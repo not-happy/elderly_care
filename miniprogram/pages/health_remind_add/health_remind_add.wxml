@@ -1,0 +1,54 @@
+<view class="page">
+  <view class="form-container">
+    <!-- 药品信息部分 -->
+    <view class="form-section">
+      <view class="section-title">药品信息</view>
+      
+      <view class="form-item">
+        <text class="form-label">药品名称</text>
+        <input class="form-input" placeholder="请输入药品名称" value="{{medicName}}" bindinput="inputMedicName" />
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">药品剂量</text>
+        <input class="form-input" type="digit" placeholder="请输入数量" value="{{dosage}}" bindinput="inputDosage" />
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">药品说明</text>
+        <textarea class="form-textarea" placeholder="请输入用药说明（如饭前/饭后服用等）" value="{{description}}" bindinput="inputDescription"></textarea>
+      </view>
+    </view>
+    
+    <!-- 提醒时间部分 -->
+    <view class="form-section">
+      <view class="section-title">提醒时间</view>
+      
+      <view class="form-item">
+        <text class="form-label">服药时段</text>
+        <picker bindchange="mealTimeChange" value="{{mealTimeIndex}}" range="{{mealTimeList}}">
+          <view class="picker-view">
+            <text>{{mealTimeList[mealTimeIndex]}}</text>
+            <image class="picker-arrow" src="/images/arrow_down.png"></image>
+          </view>
+        </picker>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">提醒时间</text>
+        <picker mode="time" bindchange="timeChange" value="{{remindTime}}">
+          <view class="picker-view">
+            <text>{{remindTime}}</text>
+            <image class="picker-arrow" src="/images/arrow_down.png"></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 底部按钮 -->
+  <view class="btn-area">
+    <button class="cancel-btn" bindtap="cancelAdd">取消</button>
+    <button class="save-btn" bindtap="saveRemind">保存</button>
+  </view>
+</view>

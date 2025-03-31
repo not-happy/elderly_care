@@ -1,14 +1,23 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/home/home",
+    "pages/heart/heart",
     "pages/order/order",
     "pages/my/my",
+    "pages/my_person/my_person",
+    "pages/my_about/my_about",
+    "pages/my_public/my_public",
     "pages/health/health",
+    "pages/health_files/health_files",
+    "pages/health_remind/health_remind",
+    "pages/health_remind_add/health_remind_add",
     "pages/device/device",
+    "pages/device_add/device_add",
     "pages/help/help",
     "pages/call/call",
     "pages/article/article",
-    "pages/index/index",
+    "pages/article_more/article_more",
     "pages/logs/logs"
   ],
   "tabBar": {
@@ -20,20 +29,20 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "images/heart.jpg",
-        "selectedIconPath": "images/heart.jpg"
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png"
       },
       {
         "pagePath": "pages/health/health",
         "text": "健康",
-        "iconPath": "images/help.jpg",
-        "selectedIconPath": "images/help.jpg"
+        "iconPath": "images/health.png",
+        "selectedIconPath": "images/health.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/help.jpg",
-        "selectedIconPath": "images/help.jpg"
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my.png"
       }
     ]
   },

@@ -2,10 +2,13 @@
     <!-- 轮播图 -->
     <swiper class="swiper" indicator-dots autoplay interval="3000" circular>
         <swiper-item>
-            <image src="/images/image1.jpeg" class="swiper-image"></image>
+            <image src="/images/banner1.jpg" class="swiper-image"></image>
         </swiper-item>
         <swiper-item>
-            <image src="/images/image2.jpeg" class="swiper-image"></image>
+            <image src="/images/banner2.jpeg" class="swiper-image"></image>
+        </swiper-item>
+         <swiper-item>
+            <image src="/images/banner3.jpeg" class="swiper-image"></image>
         </swiper-item>
     </swiper>
     <!-- 快捷功能按钮 -->
@@ -14,7 +17,7 @@
             <image src="/images/call.jpg" class="button-icon"></image>
             <text class="button-text">一键呼叫</text>
         </view>
-        <view class="button-item">
+        <view class="button-item" bindtap="navigateToHeart">
             <image src="/images/heart.jpg" class="button-icon"></image>
             <text class="button-text">一点孝心</text>
         </view>
@@ -28,34 +31,45 @@
         </view>
     </view>
     <!-- 用药提醒 -->
-    <view class="reminder">
+    <view class="reminder" bindtap="navigateToRemind">
         <view class="reminder-header">
             <!-- <text class="reminder-title">用药提醒</text> -->
             <text class="reminder-text-top">用药</text>
             <text class="reminder-text-bottom">提醒</text>
         </view>
+        <view class="reminder-vertical">
+        </view>
         <view class="reminder-content">
-            <text class="reminder-time">服务时间：06:30</text>
-            <text class="reminder-pill">卡托普利 2片</text>
+            <view class="reminder-content1">
+                <image src="/images/remind.png" class="reminder-image"></image>
+                 <text class="reminder-title">用药提醒</text>
+             </view>
+            <view class="reminder-content2">
+                 <text class="reminder-time">服务时间：06:30</text>
+                <text class="reminder-pill">卡托普利 2片</text>
+            </view>   
         </view>
     </view>
     <!-- 疾病宝典 -->
     <view class="health-tips">
         <view class="tips-header">
             <text class="tips-title">疾病宝典</text>
-            <text class="more">更多 ></text>
+            <view class="more-container" bindtap="navigateToMore">
+                 <text class="more">更多</text>
+                <text class="more-arrow">></text>
+            </view> 
         </view>
         <view class="tips-content">
             <view class="tip-item" bindtap="navigateToDiabetes">
-                <image src="/images/image1.jpeg" class="tip-image"></image>
+                <image src="/images/article.png" class="tip-image"></image>
                 <text class="tip-text">控制血糖</text>
             </view>
             <view class="tip-item">
-                <image src="/images/image2.jpeg" class="tip-image"></image>
+                <image src="/images/article.png" class="tip-image"></image>
                 <text class="tip-text">注射胰岛素</text>
             </view>
             <view class="tip-item">
-                <image src="/images/image1.jpeg" class="tip-image"></image>
+                <image src="/images/article.png" class="tip-image"></image>
                 <text class="tip-text">健康饮食</text>
             </view>
         </view>

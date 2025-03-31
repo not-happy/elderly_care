@@ -3,7 +3,7 @@
   <!-- 用户信息部分 -->
   <view class="user-info">
     <view class="avatar">
-      <image class="avatar-image" src="/images/call.jpg"></image>
+      <image class="avatar-image" src="/images/head.png"></image>
     </view>
     <view class="info">
       <view class="user-details">
@@ -11,8 +11,8 @@
         <text class="user-info-text">男 56岁</text>
       </view>
       <view class="user-actions">
-        <button class="action-button">健康档案</button>
-        <button class="action-button">用药提醒</button>
+        <button class="action-button" bindtap="navigateToFiles">健康档案</button>
+        <button class="action-button" bindtap="navigateToRemind">用药提醒</button>
       </view>
     </view>
   </view>

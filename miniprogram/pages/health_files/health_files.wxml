@@ -1,0 +1,53 @@
+<view class="page">
+  <!-- 基本信息 -->
+  <view class="basic-infor">
+    <view class="info-header">
+      <text class="header-title">基本信息</text>
+    </view>  
+    <view class="info-content">
+      <view class="info-row">
+        <view class="info-label">姓名</view>
+        <view class="info-value">张爱国</view>
+      </view>
+      
+      <view class="info-row">
+        <view class="info-label">性别</view>
+        <view class="info-value">男</view>
+      </view>
+      
+      <view class="info-row">
+        <view class="info-label">年龄</view>
+        <view class="info-value">68岁</view>
+      </view>
+      
+      <view class="info-row">
+        <view class="info-label">联系电话</view>
+        <view class="info-value">138****5678</view>
+      </view>
+      
+      <view class="info-row">
+        <view class="info-label">身份证号</view>
+        <view class="info-value">330***********1234</view>
+      </view>
+      
+      <view class="info-row">
+        <view class="info-label">家庭住址</view>
+        <view class="info-value">浙江省杭州市西湖区文三路100号</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 健康信息 -->
+  <view class="health-infor">
+    <view class="health-infor-header">
+      <text class="health-infor-header-title">健康信息</text>
+    </view>  
+    <view class="settings-options">
+      <view class="settings-item">
+        <image src="/images/xueya.png" class="settings-icon"></image>
+        <text class="settings-text">血压记录</text>
+        <image src="/images/right.jpg" class="settings-arrow"></image>
+      </view>
+    </view>
+  </view>
+</view>

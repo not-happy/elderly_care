@@ -2,8 +2,8 @@
   <!-- 选项卡 -->
   <view class="tabs">
     <view class="tab-item active">全部</view>
-    <view class="tab-item">待接单</view>
-    <view class="tab-item">待服务</view>
+    <view class="tab-item">一点孝心</view>
+    <view class="tab-item">三助服务</view>
   </view>
   <!-- 订单列表 -->
   <view class="order-list">

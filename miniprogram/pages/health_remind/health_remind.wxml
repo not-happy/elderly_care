@@ -1,0 +1,103 @@
+<view class="page">
+  <!-- 提醒清单 -->
+  <view class="remind-list">
+    <!-- 早餐用药提醒 -->
+    <view class="remind-section">
+      <view class="section-header">
+        <image class="meal-icon" src="/images/breakfast.png"></image>
+        <text class="meal-title">早餐用药</text>
+      </view>
+      
+      <view class="remind-items">
+        <view class="remind-item">
+          <view class="remind-time">06:30</view>
+          <view class="remind-info">
+            <view class="remind-name">降压药（卡托普利）</view>
+            <view class="remind-dose">1片</view>
+          </view>
+          <switch class="remind-switch" checked="{{true}}"></switch>
+        </view>
+        
+        <view class="remind-item">
+          <view class="remind-time">06:30</view>
+          <view class="remind-info">
+            <view class="remind-name">降糖药（二甲双胍）</view>
+            <view class="remind-dose">2片</view>
+          </view>
+          <switch class="remind-switch" checked="{{true}}"></switch>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 中餐用药提醒 -->
+    <view class="remind-section">
+      <view class="section-header">
+        <image class="meal-icon" src="/images/lunch.png"></image>
+        <text class="meal-title">中餐用药</text>
+      </view>
+      
+      <view class="remind-items">
+        <view class="remind-item">
+          <view class="remind-time">12:00</view>
+          <view class="remind-info">
+            <view class="remind-name">阿司匹林</view>
+            <view class="remind-dose">1片</view>
+          </view>
+          <switch class="remind-switch" checked="{{true}}"></switch>
+        </view>
+        
+        <view class="remind-item">
+          <view class="remind-time">12:00</view>
+          <view class="remind-info">
+            <view class="remind-name">维生素B族</view>
+            <view class="remind-dose">1粒</view>
+          </view>
+          <switch class="remind-switch" checked="{{false}}"></switch>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 晚餐用药提醒 -->
+    <view class="remind-section">
+      <view class="section-header">
+        <image class="meal-icon" src="/images/dinner.png"></image>
+        <text class="meal-title">晚餐用药</text>
+      </view>
+      
+      <view class="remind-items">
+        <view class="remind-item">
+          <view class="remind-time">18:30</view>
+          <view class="remind-info">
+            <view class="remind-name">降压药（卡托普利）</view>
+            <view class="remind-dose">1片</view>
+          </view>
+          <switch class="remind-switch" checked="{{true}}"></switch>
+        </view>
+        
+        <view class="remind-item">
+          <view class="remind-time">18:30</view>
+          <view class="remind-info">
+            <view class="remind-name">钙片</view>
+            <view class="remind-dose">1粒</view>
+          </view>
+          <switch class="remind-switch" checked="{{true}}"></switch>
+        </view>
+        
+        <view class="remind-item">
+          <view class="remind-time">21:00</view>
+          <view class="remind-info">
+            <view class="remind-name">安眠药</view>
+            <view class="remind-dose">半片</view>
+          </view>
+          <switch class="remind-switch" checked="{{true}}"></switch>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 添加新提醒按钮 -->
+    <view class="add-remind" bindtap="addNewRemind">
+      <image class="add-icon" src="/images/add.png"></image>
+      <text class="add-text">添加服药提醒</text>
+    </view>
+  </view>
+</view>

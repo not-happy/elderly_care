@@ -5,14 +5,14 @@
     <view class="service-card">
       <view class="card-top">
         <view class="userinfo">
-          <image class="avatar" src="/images/avatar.jpg"></image>
+          <image class="avatar" src="/images/avatar1.jpg"></image>
           <view class="info">
             <text class="name">赵师傅</text>
             <text class="description">主要负责家电维修</text>
           </view>
         </view>
         <view class="call-image">
-          <image class="call-icon" src="/images/call.jpg"></image>
+          <image class="call-icon" src="/images/call.jpg" bindtap="makePhoneCall"></image>
         </view>
       </view>
       <view class="divider"></view>
@@ -27,14 +27,14 @@
     <view class="service-card">
       <view class="card-top">
         <view class="userinfo">
-          <image class="avatar" src="/images/avatar.jpg"></image>
+          <image class="avatar" src="/images/avatar1.jpg" ></image>
           <view class="info">
             <text class="name">赵师傅</text>
             <text class="description">主要负责家电维修</text>
           </view>
         </view>
         <view class="call-image">
-          <image class="call-icon" src="/images/call.jpg"></image>
+          <image class="call-icon" src="/images/call.jpg" bindtap="makePhoneCall"></image>
         </view>
       </view>
       <view class="divider"></view>
@@ -49,14 +49,14 @@
     <view class="service-card">
       <view class="card-top">
         <view class="userinfo">
-          <image class="avatar" src="/images/avatar.jpg"></image>
+          <image class="avatar" src="/images/avatar2.jpg"></image>
           <view class="info">
             <text class="name">赵师傅</text>
-            <text class="description">主要负责家电维修</text>
+            <text class="description">主要负责上门理发</text>
           </view>
         </view>
         <view class="call-image">
-          <image class="call-icon" src="/images/call.jpg"></image>
+          <image class="call-icon" src="/images/call.jpg" bindtap="makePhoneCall"></image>
         </view>
       </view>
       <view class="divider"></view>

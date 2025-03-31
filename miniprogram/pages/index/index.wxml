@@ -1,28 +1,71 @@
-<!-- index.wxml -->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">获取头像昵称</button>
-        <view wx:else>请使用2.10.4及以上版本基础库</view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
+<view class="login-container">
+  <view class="logo-section">
+    <image class="logo" src="/images/logo.png" mode="aspectFit"></image>
+    <text class="app-name">智慧养老助手</text>
+    <text class="app-slogan">您的健康，我们的关怀</text>
+  </view>
+
+  <view class="tabs">
+    <view class="tab {{activeTab === 'login' ? 'active' : ''}}" bindtap="switchTab" data-tab="login">登录</view>
+    <view class="tab {{activeTab === 'register' ? 'active' : ''}}" bindtap="switchTab" data-tab="register">注册</view>
+  </view>
+
+  <!-- 登录表单 -->
+  <view class="form-container" hidden="{{activeTab !== 'login'}}">
+    <view class="input-group">
+      <image class="input-icon" src="/images/phone.png"></image>
+      <input class="form-input" type="number" placeholder="请输入手机号码" bindinput="inputPhone" maxlength="11" />
     </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
+    
+    <view class="input-group">
+      <image class="input-icon" src="/images/password.png"></image>
+      <input class="form-input" password="{{showPassword}}" placeholder="请输入密码" bindinput="inputPassword" />
+      <image class="eye-icon" src="{{showPassword ? '/images/eye_close.png' : '/images/eye_open.png'}}" bindtap="togglePasswordVisibility"></image>
+    </view>
+
+
+    <button class="submit-btn" bindtap="login">登录</button>
+    
+    <view class="divider">
+      <view class="line"></view>
+      <text>其他登录方式</text>
+      <view class="line"></view>
+    </view>
+    
+    <view class="other-login">
+      <button class="wechat-btn" bindtap="wechatLogin">
+        <image class="btn-icon" src="/images/wechat.png"></image>
+        <text>微信一键登录</text>
+      </button>
     </view>
   </view>
-</scroll-view>
+
+  <!-- 注册表单 -->
+  <view class="form-container" hidden="{{activeTab !== 'register'}}">
+    <view class="input-group">
+      <image class="input-icon" src="/images/phone.png"></image>
+      <input class="form-input" type="number" placeholder="请输入手机号码" bindinput="inputRegPhone" maxlength="11" />
+    </view>
+    
+    <view class="input-group verification-group">
+      <image class="input-icon" src="/images/verify.png"></image>
+      <input class="form-input" type="number" placeholder="请输入验证码" bindinput="inputVerificationCode" maxlength="6" />
+      <button class="verify-btn {{counting ? 'counting' : ''}}" bindtap="getVerificationCode" disabled="{{counting}}">
+        {{counting ? countdown + 's' : '获取验证码'}}
+      </button>
+    </view>
+    
+    <view class="input-group">
+      <image class="input-icon" src="/images/password.png"></image>
+      <input class="form-input" password="{{showRegPassword}}" placeholder="请设置密码" bindinput="inputRegPassword" />
+      <image class="eye-icon" src="{{showRegPassword ? '/images/eye_close.png' : '/images/eye_open.png'}}" bindtap="toggleRegPasswordVisibility"></image>
+    </view>
+
+
+    <button class="submit-btn {{!agreePolicy ? 'disabled' : ''}}" bindtap="register" disabled="{{!agreePolicy}}">注册</button>
+    
+    <view class="helper-links center">
+      <text class="link" bindtap="switchTab" data-tab="login">已有账号？登录</text>
+    </view>
+  </view>
+</view>

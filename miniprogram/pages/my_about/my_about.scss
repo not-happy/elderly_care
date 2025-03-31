@@ -1,0 +1,92 @@
+.about-container {
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40rpx 30rpx;
+  }
+  
+  .app-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50rpx;
+    margin-bottom: 60rpx;
+    
+    .app-logo {
+      width: 160rpx;
+      height: 160rpx;
+      border-radius: 30rpx;
+      margin-bottom: 30rpx;
+      box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+    }
+    
+    .app-name {
+      font-size: 36rpx;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 15rpx;
+    }
+    
+    .app-version {
+      font-size: 28rpx;
+      color: #888;
+    }
+  }
+  
+  .app-desc-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16rpx;
+    padding: 30rpx;
+    margin-bottom: 10rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+    
+    .section-title {
+      font-size: 32rpx;
+      font-weight: 550;
+      color: #333;
+      margin-bottom: 5rpx;
+      position: relative;
+      padding-left: 20rpx;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 25%;
+        height: 50%;
+        width: 6rpx;
+        background-color: #ff6b00;
+        border-radius: 3rpx;
+      }
+    }
+    
+    .app-desc {
+      padding: 10rpx;
+      padding-top: 5rpx; // 减小顶部内边距
+      
+      .desc-text {
+        font-size: 28rpx;
+        color: #666;
+        line-height: 1.7;
+        white-space: pre-wrap;
+      }
+    }
+  }
+  
+  .footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30rpx 0;
+    
+    .copyright, .contact {
+      font-size: 24rpx;
+      color: #999;
+      line-height: 1.8;
+    }
+  }

@@ -1,0 +1,51 @@
+<view class="page">
+  <!-- 顶部导航栏 -->
+  <!-- 内容部分 -->
+  <view class="content">
+    <!-- 预约体检 -->
+    <view class="service-section">
+      <text class="section-title">预约体检</text>
+      <view class="service-card">
+        <image class="service-image" src="/images/food.jpg"></image>
+        <view class="service-info">
+          <text class="service-title">预约体检</text>
+          <text class="service-description">为行动不便的长者提供上门体检服务</text>
+          <text class="service-price">¥ 300.77</text>
+        </view>
+        <view class="service-action">
+          <button class="order-button">下单</button>
+        </view>
+      </view>
+    </view>
+    <!-- 预约病床 -->
+    <view class="service-section">
+      <text class="section-title">预约病床</text>
+      <view class="service-card">
+        <image class="service-image" src="/images/clear.jpg"></image>
+        <view class="service-info">
+          <text class="service-title">预约病床</text>
+          <text class="service-description">为行动不便的长者提供陪床服务</text>
+          <text class="service-price">¥ 300.77</text>
+        </view>
+        <view class="service-action">
+          <button class="order-button">下单</button>
+        </view>
+      </view>
+    </view>
+    <!-- 预约陪诊 -->
+    <view class="service-section">
+      <text class="section-title">预约陪诊</text>
+      <view class="service-card">
+        <image class="service-image" src="/images/diagnosis.jpg"></image>
+        <view class="service-info">
+          <text class="service-title">预约陪诊</text>
+          <text class="service-description">为行动不便的长者提供陪诊服务</text>
+          <text class="service-price">¥ 300.77</text>
+        </view>
+        <view class="service-action">
+          <button class="order-button">下单</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<view class="about-container">
+    <!-- 小程序图标和名称 -->
+    <view class="app-info">
+      <image class="app-logo" src="/images/logo.png" mode="aspectFit"></image>
+      <text class="app-name">智慧养老助手</text>
+      <text class="app-version">版本号：1.0.0</text>
+    </view>
+    
+    <!-- 小程序说明 -->
+    <view class="app-desc-container">
+      <view class="section-title">关于我们</view>
+      <view class="app-desc">
+        <text class="desc-text">
+    "智慧养老助手"是一款专为老年人设计的健康管理小程序，致力于为老年人提供便捷、智能的健康服务。  
+    我们提供用药提醒、健康档案管理、疾病知识查询等功能，帮助老年人更好地管理自己的健康，提升生活质量。
+    本小程序采用简洁、易用的界面设计，操作简单，适合老年人使用。
+        </text>
+      </view>
+    </view>
+    
+    <!-- 底部信息 -->
+    <view class="footer">
+      <text class="copyright">© 2025 智慧养老团队 版权所有</text>
+      <text class="contact">联系我们：contact@eldercare.com</text>
+    </view>
+  </view>

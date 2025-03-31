@@ -1,0 +1,23 @@
+<view class="page">
+  <!-- 设备列表 -->
+  <view class="device-list">
+    <view class="device-item">
+      <view class="device-info">
+        <text class="device-name">智能手表A001</text>
+      </view>
+      <view class="device-arrow">
+        <image src="/images/right.jpg" class="arrow-icon"></image>
+      </view>
+    </view>
+  </view>
+  
+  <view class="device-memo">
+      <text class="memo-text">请保证手机蓝牙已打开</text>
+  </view>
+
+  <view class="device-scan">
+    <view class="scan-button" bindtap="navigateToScan">
+      <text class="scan-text">扫描二维码添加设备</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,76 @@
+<view class="container">
+  <view class="search">
+      <view class="search-box">
+        <image class="search-icon" src="/images/search.png"></image>
+        <input class="search-input" placeholder="请输入内容搜索文章" placeholder-class="placeholder" bindinput="onSearchInput" confirm-type="search" bindconfirm="onSearch"></input>
+        <view class="search-btn" bindtap="onSearch">搜索</view>
+     </view>
+  </view>
+
+  <view class="article-list">
+    <!-- 文章项1 -->
+    <view class="article-item" bindtap="navigateToDiabetes">
+      <!-- 文章图片 -->
+      <image class="article-image" src="/images/article.png" mode="aspectFill"></image>
+      
+      <!-- 文章内容区 -->
+      <view class="article-content">
+        <!-- 文章标题 -->
+        <text class="article-title">糖尿病患者如何控制血糖</text>
+        
+        <!-- 文章信息区：发布时间和浏览量 -->
+        <view class="article-info">
+          <view class="info-item">
+            <image class="info-icon" src="/images/time.png"></image>
+            <text class="info-text">2025-03-25</text>
+          </view>
+          <view class="info-item">
+            <image class="info-icon" src="/images/eye.png"></image>
+            <text class="info-text">25次浏览</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 文章项2 -->
+    <view class="article-item" bindtap="navigateToDiabetes">
+      <image class="article-image" src="/images/article.png" mode="aspectFill"></image>
+      <view class="article-content">
+        <text class="article-title">老年人应保持的日常习惯</text>
+        <view class="article-info">
+          <view class="info-item">
+            <image class="info-icon" src="/images/time.png"></image>
+            <text class="info-text">2025-03-23</text>
+          </view>
+          <view class="info-item">
+            <image class="info-icon" src="/images/eye.png"></image>
+            <text class="info-text">18次浏览</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 文章项3 -->
+    <view class="article-item" bindtap="navigateToDiabetes">
+      <image class="article-image" src="/images/article.png" mode="aspectFill"></image>
+      <view class="article-content">
+        <text class="article-title">高血压患者的健康饮食指南</text>
+        <view class="article-info">
+          <view class="info-item">
+            <image class="info-icon" src="/images/time.png"></image>
+            <text class="info-text">2025-03-20</text>
+          </view>
+          <view class="info-item">
+            <image class="info-icon" src="/images/eye.png"></image>
+            <text class="info-text">3245次浏览</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  
+    <!-- 加载更多提示 -->
+    <view class="no-more">
+      <text>没有更多文章了</text>
+    </view>
+  </view>
+</view>

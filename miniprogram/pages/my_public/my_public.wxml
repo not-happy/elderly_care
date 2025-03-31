@@ -1,0 +1,28 @@
+<view class="public-page">
+    <view class="header">
+      <image class="logo" src="/images/logo.png" mode="aspectFit"></image>
+      <text class="title">智慧养老助手</text>
+      <text class="subtitle">关注公众号，获取更多养老资讯</text>
+    </view>
+  
+    <view class="qrcode-container">
+      <image class="qrcode" src="/images/qrcode.png" mode="aspectFit" show-menu-by-longpress></image>
+      <text class="tip">长按保存二维码图片</text>
+    </view>
+  
+    <view class="info-container">
+      <view class="info-item">
+        <text class="info-text">关注公众号，获取最新养生知识</text>
+      </view>
+      <view class="info-item">
+        <text class="info-text">开启消息提醒，不错过重要通知</text>
+      </view>
+      <view class="info-item">
+        <text class="info-text">享受专业客服一对一咨询服务</text>
+      </view>
+    </view>
+  
+    <view class="button-container">
+      <button class="copy-btn" bindtap="copyPublicAccount">复制公众号名称</button>
+    </view>
+  </view>
