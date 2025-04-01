@@ -1,0 +1,79 @@
+<view class="page">
+  <!-- 顶部导航栏 -->
+  <view class="navbar">
+    <view class="navbar-left">
+      <text class="navbar-title">数据记录</text>
+    </view>
+      <!--
+    <view class="navbar-right">
+      <view class="add-button" bindtap="navigateToAdd">+</view>
+    </view>
+    -->
+  </view>
+
+  <!-- 简化的记录列表 - 只显示血糖记录 -->
+  <view class="record-list">
+    <!-- 血糖记录列表 -->
+    <view class="record-item">
+      <view class="record-header">
+        <view class="record-value">6.2 mmol/L</view>
+        <view class="record-device">
+          <image src="/images/device_icon.png" class="device-icon"></image>
+          <text class="device-name">家用血糖仪</text>
+        </view>
+      </view>
+      <view class="record-time">2025-03-30 12:10</view>
+    </view>
+
+    <view class="record-item">
+      <view class="record-header">
+        <view class="record-value">5.8 mmol/L</view>
+        <view class="record-device">
+          <image src="/images/device_icon.png" class="device-icon"></image>
+          <text class="device-name">家用血糖仪</text>
+        </view>
+      </view>
+      <view class="record-time">2025-03-29 09:15</view>
+    </view>
+
+    <view class="record-item">
+      <view class="record-header">
+        <view class="record-value">6.5 mmol/L</view>
+        <view class="record-device">
+          <image src="/images/device_icon.png" class="device-icon"></image>
+          <text class="device-name">智能监测手表</text>
+        </view>
+      </view>
+      <view class="record-time">2025-03-28 18:30</view>
+    </view>
+
+    <view class="record-item">
+      <view class="record-header">
+        <view class="record-value">5.9 mmol/L</view>
+        <view class="record-device">
+          <image src="/images/device_icon.png" class="device-icon"></image>
+          <text class="device-name">医院血糖仪</text>
+        </view>
+      </view>
+      <view class="record-time">2025-03-27 08:00</view>
+    </view>
+
+    <view class="record-item">
+      <view class="record-header">
+        <view class="record-value">6.1 mmol/L</view>
+        <view class="record-device">
+          <image src="/images/device_icon.png" class="device-icon"></image>
+          <text class="device-name">家用血糖仪</text>
+        </view>
+      </view>
+      <view class="record-time">2025-03-26 12:45</view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" hidden="{{!isEmpty}}">
+    <image class="empty-icon" src="/images/empty_record.png"></image>
+    <view class="empty-text">暂无血糖记录</view>
+    <view class="empty-desc">点击"+"添加记录</view>
+  </view>
+</view>

@@ -45,7 +45,27 @@
     <view class="settings-options">
       <view class="settings-item">
         <image src="/images/xueya.png" class="settings-icon"></image>
+        <text class="settings-text">体重记录</text>
+        <image src="/images/right.jpg" class="settings-arrow"  bindtap="navigateToRecord"></image>
+      </view>
+      <view class="settings-item">
+        <image src="/images/xueya.png" class="settings-icon"></image>
+        <text class="settings-text">体温记录</text>
+        <image src="/images/right.jpg" class="settings-arrow"></image>
+      </view>
+      <view class="settings-item">
+        <image src="/images/xueya.png" class="settings-icon"></image>
         <text class="settings-text">血压记录</text>
+        <image src="/images/right.jpg" class="settings-arrow"></image>
+      </view>
+      <view class="settings-item">
+        <image src="/images/xueya.png" class="settings-icon"></image>
+        <text class="settings-text">血糖记录</text>
+        <image src="/images/right.jpg" class="settings-arrow"></image>
+      </view>
+      <view class="settings-item">
+        <image src="/images/xueya.png" class="settings-icon"></image>
+        <text class="settings-text">心率记录</text>
         <image src="/images/right.jpg" class="settings-arrow"></image>
       </view>
     </view>

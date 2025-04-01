@@ -10,6 +10,7 @@
     "pages/my_public/my_public",
     "pages/health/health",
     "pages/health_files/health_files",
+    "pages/health_record/health_record",
     "pages/health_remind/health_remind",
     "pages/health_remind_add/health_remind_add",
     "pages/device/device",
